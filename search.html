@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        #mySearch{
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid #ddd;
+        }
+        #myMenu{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #myMenu li a{
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        #myMenu li a:hover{
+            background-color: #eee;
+        }
+    </style>
+    <title>SEARCH</title>
+</head>
+<body>
+    <input type="text" id="mySearch" placeholder="Search..">
+        <ul id="myMenu">
+            <li><a href="seven.html">Seven</a></li>
+            <li><a href="one.html">one</a></li>
+        </ul>
+        <script>
+    function myFunction() {
+var input, filter, ul, a, i;
+input= document. getElementById("mySearch");
+filter = input.value.toUpperCase();
+ul = document. getElementById ("myMenu");
+li = ul.getElementsByTagName ("li")
+
+for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {li[i].style.display = ""}
+    else { li[i].style.display = "none"}
+}
+
+    }
+        </script>
+    
+</body>
+</html>

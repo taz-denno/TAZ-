@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .images{display: flex; margin: 20px;justify-content: space-around;}
+        .image-container{
+            background-color: black;
+            height: 350px;
+            width: 350px;
+            border: 5px solid black;
+            position: relative;
+        }
+        .image-container img{ 
+            width: 100%;
+            height: 100%;
+         }
+        
+         .transition-image{
+            position: absolute ;
+            top:  0px ;
+            left:0px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+         }
+        
+         .transition-image:hover{
+        opacity: 1;
+         }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="images">
+        <div class="image-container">
+         <img src="./images/kuroiler.jpeg"alt="" height="500" width="500">
+         <img class="transition-image"src="./images/pexels-photo-168573.webp" alt="" height="500" width="500"> 
+        </div>
+    
+        <div class="image-container ">
+            <img src="./wallpaper/pexels-pixabay-37655.jpg" alt="" height="500" width="500">
+            <img class="transition-image"src="./images/pexels-photo-168573.webp" alt="" height="500" width="500"> 
+           </div>
+        <div class="image-container">
+            <img src="./wallpaper/pexels-pixabay-34770.jpg" alt="" height="500" width="5oo">
+            <img class="transition-image"src="./images/pexels-photo-168573.webp" alt="" height="500" width="500"> 
+    
+        </div>
+        </div> 
+</body>
+</html>
